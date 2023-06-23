@@ -19,7 +19,7 @@
           </div>
           <div class="sm:px-6 lg:px-0">
             <div class="relative isolate overflow-hidden sm:mx-auto sm:max-w-2xl px-8  sm:rounded-tr-3xl sm:rounded-bl-3xl lg:mx-0 lg:max-w-none">
-                <nuxt-img src="/images/rounded-sea-view.png" alt="Villa Granly" class="" />
+                <img :src="seaViewImage" alt="Villa Granly" class="" />
             </div>
           </div>
         </div>
@@ -29,6 +29,7 @@
   
   <script setup>
   import { PhoneIcon, KeyIcon, ClipboardDocumentIcon } from '@heroicons/vue/20/solid'
+  import seaViewImage from '@/assets/images/rounded-sea-view.png'
   
   const features = [
     {
