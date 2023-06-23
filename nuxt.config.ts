@@ -5,7 +5,15 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
     '@nuxtjs/google-fonts',
+    'nuxt-swiper',
   ],
+  swiper: {
+    // Swiper options
+    //----------------------
+    prefix: 'Swiper',
+    // styleLang: 'css',
+    modules: ['navigation', 'pagination', 'a11y', 'virtual'], // all modules are imported by default
+  },
   googleFonts: {
     families: {
       Roboto: true,

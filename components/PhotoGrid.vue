@@ -2,17 +2,29 @@
     <div>
         <!-- <vue-picture-swipe :items="photos">
         </vue-picture-swipe> -->
+
+        <Swiper
+            :modules="[SwiperNavigation, SwiperPagination, SwiperA11y, SwiperVirtual]"
+            :slides-per-view="1"
+            :space-between="50"
+            navigation
+            :pagination="{ clickable: true, dynamicBullets: true }" grab-cursor virtual
+        >
+            <SwiperSlide v-for="slide in 10" :key="slide">
+            <strong>{{ slide }}</strong>
+            </SwiperSlide>
+        </Swiper>
     </div>
 </template>
 
 <script setup>
 // import VuePictureSwipe from 'vue3-picture-swipe';
 
-// const photoFileRoot = ref('images/gallery/granly')
+ const photoFileRoot = ref('/images/gallery/granly')
 
-// const photoFileNames = ref([
+ const photoFileNames = ref([
 
-// ])
+ ])
 
 
 
@@ -20,12 +32,14 @@
 
 // ])
 
-// function formatFileNames() {
-//     for (let i = 1; i < 126; i++) {
-//         photoFileNames.value.push(photoFileRoot.value + i)
-//     }
+function formatFileNames() {
+    for (let i = 1; i < 126; i++) {
+        photoFileNames.value.push(photoFileRoot.value + i)
+    }
     
-// }
+}
+
+formatFileNames()
 
 
 // function generatePhotoObjects() {
