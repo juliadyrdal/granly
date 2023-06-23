@@ -28,8 +28,6 @@ function formatFileNames() {
 }
 
 
-//console.log(photoFileNames.value)
-
 function generatePhotoObjects() {
     formatFileNames()
     for (let i = 0; i < 125; i++) {
@@ -38,8 +36,6 @@ function generatePhotoObjects() {
 }
 
 generatePhotoObjects()
-
-console.log(photos.value)
 
 //     {src: 'images/gallery/_DSC1407.jpg',thumbnail: 'images/gallery/_DSC1407.jpg',w: 1200, h: 900, title: 'Stue'},
 </script>
