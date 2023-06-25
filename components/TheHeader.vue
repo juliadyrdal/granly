@@ -55,17 +55,10 @@
         <div class="flex items-center gap-x-6">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Granly</span>
-            <img
-              class="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
-            />
+            <img class="h-8 w-auto" src="" alt="" />
           </a>
-          <a
-            href="#"
-            class="ml-auto rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >Contact</a
-          >
+          <ButtonTrailing class="ml-auto" text="Contact" />
+
           <button
             type="button"
             class="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -82,17 +75,13 @@
                 v-for="item in navigation"
                 :key="item.name"
                 :to="item.href"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-normal leading-7 text-theme-grey-dark"
                 @click="mobileMenuOpen = false"
                 >{{ item.name }}</NuxtLink
               >
             </div>
             <div class="py-6">
-              <a
-                href="#"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Log in</a
-              >
+              <!-- can add external link or email address here -->
             </div>
           </div>
         </div>
