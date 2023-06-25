@@ -25,11 +25,7 @@
         >
       </div>
       <div class="flex flex-1 items-center justify-end gap-x-6">
-        <a
-          href="#"
-          class="border border-theme-grey-dark px-4 py-2 text-sm font-semibold uppercase text-theme-grey-dark shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >Contact</a
-        >
+        <Button text="Contact" />
       </div>
       <div class="flex lg:hidden">
         <button
@@ -57,7 +53,7 @@
             <span class="sr-only">Granly</span>
             <img class="h-8 w-auto" src="" alt="" />
           </a>
-          <ButtonTrailing class="ml-auto" text="Contact" />
+          <Button class="ml-auto" text="Contact" />
 
           <button
             type="button"
