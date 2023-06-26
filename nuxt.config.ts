@@ -12,6 +12,9 @@ export default defineNuxtConfig({
     vueI18n: "./i18n.config.ts",
     locales: ["en", "no"], // used in URL path prefix
     defaultLocale: "en",
+    detectBrowserLanguage: {
+      useCookie: false,
+    },
   },
   swiper: {
     // Swiper options

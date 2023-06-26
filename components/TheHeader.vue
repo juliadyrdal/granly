@@ -17,15 +17,23 @@
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
         <NuxtLink
-          v-for="item in navigation"
-          :key="item.name"
-          :to="item.href"
+          :to="photogallery"
           class="text-sm uppercase font-normal leading-6 text-theme-grey-dark"
-          >{{ item.name }}</NuxtLink
+          >{{ $t("navItems.photoGallery") }}</NuxtLink
+        >
+        <NuxtLink
+          :to="photogallery"
+          class="text-sm uppercase font-normal leading-6 text-theme-grey-dark"
+          >{{ $t("navItems.features") }}</NuxtLink
+        >
+        <NuxtLink
+          :to="photogallery"
+          class="text-sm uppercase font-normal leading-6 text-theme-grey-dark"
+          >{{ $t("navItems.details") }}</NuxtLink
         >
       </div>
       <div class="flex flex-1 items-center justify-end gap-x-6">
-        <Button text="Contact" />
+        <Button text="navItems.contact" />
       </div>
       <div class="flex lg:hidden">
         <button
@@ -53,7 +61,7 @@
             <span class="sr-only">Granly</span>
             <img class="h-8 w-auto" src="" alt="" />
           </a>
-          <Button class="ml-auto" text="Contact" />
+          <Button class="ml-auto" text="navItems.contact" />
 
           <button
             type="button"
@@ -68,12 +76,22 @@
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
               <NuxtLink
-                v-for="item in navigation"
-                :key="item.name"
-                :to="item.href"
+                to="photogallery"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-normal leading-7 text-theme-grey-dark"
                 @click="mobileMenuOpen = false"
-                >{{ item.name }}</NuxtLink
+                >{{ $t("navItems.photoGallery") }}</NuxtLink
+              >
+              <NuxtLink
+                to="/"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-normal leading-7 text-theme-grey-dark"
+                @click="mobileMenuOpen = false"
+                >{{ $t("navItems.features") }}</NuxtLink
+              >
+              <NuxtLink
+                to="/"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-normal leading-7 text-theme-grey-dark"
+                @click="mobileMenuOpen = false"
+                >{{ $t("navItems.details") }}</NuxtLink
               >
             </div>
             <div class="py-6">
@@ -92,9 +110,9 @@ import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 
 const navigation = [
-  { name: "Photo gallery", href: "photogallery" },
-  { name: "Features", href: "#" },
-  { name: "Details of Sale", href: "#" },
+  { name: "navItem.photoGallery", href: "photogallery" },
+  { name: "navItem.features", href: "#" },
+  { name: "navItem.details", href: "#" },
 ];
 
 const mobileMenuOpen = ref(false);
