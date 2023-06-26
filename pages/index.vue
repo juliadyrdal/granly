@@ -1,16 +1,12 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-    <div>
-        <TheHero />
-        <FeaturesSection />
-        <MediaRightSection />
-    </div>
+  <div>
+    <Locale />
+    <TheHero />
+    <FeaturesSection />
+    <MediaRightSection />
+  </div>
 </template>
 
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
