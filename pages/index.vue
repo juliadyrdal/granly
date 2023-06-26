@@ -2,7 +2,6 @@
 
 <template>
   <div>
-    <Locale />
     <TheHero />
     <FeaturesSection />
     <MediaRightSection />
