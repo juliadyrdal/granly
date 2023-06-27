@@ -6,7 +6,7 @@
       aria-label="Global"
     >
       <div class="flex lg:flex-1">
-        <NuxtLink to="/" class="-m-1.5 p-1.5">
+        <NuxtLink :to="localePath('/')" class="-m-1.5 p-1.5">
           <span class="sr-only">Granly</span>
           <p
             class="text-2xl font-bold uppercase font-display leading-6 text-theme-grey-dark"
@@ -17,17 +17,17 @@
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
         <NuxtLink
-          to="photogallery"
+          :to="localePath('photogallery')"
           class="text-sm uppercase font-normal leading-6 text-theme-grey-dark"
           >{{ $t("navItems.photoGallery") }}</NuxtLink
         >
         <NuxtLink
-          to="photogallery"
+          :to="localePath('/')"
           class="text-sm uppercase font-normal leading-6 text-theme-grey-dark"
           >{{ $t("navItems.features") }}</NuxtLink
         >
         <NuxtLink
-          to="photogallery"
+          :to="localePath('/')"
           class="text-sm uppercase font-normal leading-6 text-theme-grey-dark"
           >{{ $t("navItems.details") }}</NuxtLink
         >
@@ -45,6 +45,7 @@
           <Bars3Icon class="h-6 w-6" aria-hidden="true" />
         </button>
       </div>
+      <Locale />
     </nav>
     <Dialog
       as="div"
@@ -71,24 +72,25 @@
             <span class="sr-only">Close menu</span>
             <XMarkIcon class="h-6 w-6" aria-hidden="true" />
           </button>
+          <Locale />
         </div>
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
               <NuxtLink
-                to="photogallery"
+                :to="localePath('photogallery')"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-normal leading-7 text-theme-grey-dark"
                 @click="mobileMenuOpen = false"
                 >{{ $t("navItems.photoGallery") }}</NuxtLink
               >
               <NuxtLink
-                to="/"
+                :to="localePath('/')"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-normal leading-7 text-theme-grey-dark"
                 @click="mobileMenuOpen = false"
                 >{{ $t("navItems.features") }}</NuxtLink
               >
               <NuxtLink
-                to="/"
+                :to="localePath('/')"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-normal leading-7 text-theme-grey-dark"
                 @click="mobileMenuOpen = false"
                 >{{ $t("navItems.details") }}</NuxtLink
@@ -114,6 +116,8 @@ const navigation = [
   { name: "navItem.features", href: "#" },
   { name: "navItem.details", href: "#" },
 ];
+
+const localePath = useLocalePath();
 
 const mobileMenuOpen = ref(false);
 </script>

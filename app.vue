@@ -2,7 +2,6 @@
 
 <template>
   <div>
-    <Locale />
     <TheHeader />
     <NuxtPage />
     <TheFooter />
