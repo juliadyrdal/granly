@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="mx-auto flex max-w-7xl py-2 px-6 lg:px-8">
     <div></div>
     <form class="ml-auto">
       <select v-model="locale">

@@ -17,17 +17,17 @@
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
         <NuxtLink
-          :to="photogallery"
+          to="photogallery"
           class="text-sm uppercase font-normal leading-6 text-theme-grey-dark"
           >{{ $t("navItems.photoGallery") }}</NuxtLink
         >
         <NuxtLink
-          :to="photogallery"
+          to="photogallery"
           class="text-sm uppercase font-normal leading-6 text-theme-grey-dark"
           >{{ $t("navItems.features") }}</NuxtLink
         >
         <NuxtLink
-          :to="photogallery"
+          to="photogallery"
           class="text-sm uppercase font-normal leading-6 text-theme-grey-dark"
           >{{ $t("navItems.details") }}</NuxtLink
         >
