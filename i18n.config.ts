@@ -10,6 +10,12 @@ export default defineI18nConfig(() => ({
         details: "Details of sale",
         contact: "Contact",
       },
+      contact: {
+        address: "Postal address",
+        email: "Email",
+        phone: "Phone",
+        norway: "Norway",
+      },
       pages: {
         photoGallery: {
           title: "Photo Gallery",
@@ -24,6 +30,12 @@ export default defineI18nConfig(() => ({
         features: "Egenskaper",
         details: "Salgsdetaljer",
         contact: "Kontakt",
+      },
+      contact: {
+        address: "Postadresse",
+        email: "Epost",
+        phone: "Telefon",
+        norway: "Norge",
       },
       pages: {
         photoGallery: {
