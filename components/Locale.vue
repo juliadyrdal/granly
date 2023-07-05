@@ -2,7 +2,7 @@
   <form class="">
     <select
       v-model="locale"
-      class="text-sm font-sans font-light uppercase text-slate-500 underline underline-offset-2"
+      class="text-sm font-sans font-light uppercase text-slate-500 bg-white underline underline-offset-2"
     >
       <option value="en">en</option>
       <option value="no">no</option>
